@@ -143,21 +143,24 @@
       <div class="advantages__wrapper">
         <h2 class="advantages__heading heading-sub">Преимущества</h2>
 
-        <span class="advantages__text">Главные причины выбрать Drink2Go</span>
+        <span class="advantages__promo-text">Главные причины выбрать Drink2Go</span>
 
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--speed">
             <p class="advantages__item-title">Скорость</p>
             <p class="advantages__item-description">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
+
           <li class="advantages__item advantages__item--convenience">
             <p class="advantages__item-title">Удобство</p>
             <p class="advantages__item-description">Легко помещается и в карман, и в маленькую сумочку</p>
           </li>
+
           <li class="advantages__item advantages__item--vigor">
             <p class="advantages__item-title">Бодрость</p>
             <p class="advantages__item-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
+
           <li class="advantages__item advantages__item--eco-friendly">
             <p class="advantages__item-title">Экологичность</p>
             <p class="advantages__item-description">Вся упаковка сделана из перерабатываемых материалов</p>
@@ -167,8 +170,117 @@
     </section>
 
 
-    <section>
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <h2 class="catalog__heading heading-sub">Каталог</h2>
 
+        <span class="catalog__text">Каталог кофейных напитков</span>
+
+        <section class="catalog-filter">
+          <form class="catalog-filter__form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__title">Цена</legend>
+              <div class="catalog-filter__range">
+                <div class="catalog-filter__range-scale">
+                  <!-- noUiSlider -->
+                </div>
+              </div>
+              <input class="catalog-filter__range-min" type="text">
+              <input class="catalog-filter__range-max" type="text">
+            </fieldset>
+
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__title">Наличие молока</legend>
+              <ul class="catalog-filter__radiobutton-list">
+                <li class="catalog-filter__radiobutton-item">
+                  <input class="catalog-filter__radiobutton-custom" type="radio" name="radiobutton-milk-availability" value="no-matter-milk" id="no-matter-milk" checked>
+                  <label class="catalog-filter__radiobutton-field" for="no-matter-milk">
+                    Неважно
+                  </label>
+                </li>
+
+                <li class="catalog-filter__radiobutton-item">
+                  <input class="catalog-filter__radiobutton-custom" type="radio" name="radiobutton-milk-availability" value="only-animal-milk" id="only-animal-milk">
+                  <label class="catalog-filter__radiobutton-field" for="only-animal-milk">
+                    Только животное
+                  </label>
+                </li>
+
+                <li class="catalog-filter__radiobutton-item">
+                  <input class="catalog-filter__radiobutton-custom" type="radio" name="radiobutton-milk-availability" value="only-vegetable-milk" id="only-vegetable-milk">
+                  <label class="catalog-filter__radiobutton-field" for="only-vegetable-milk">
+                    Только растительное
+                  </label>
+                </li>
+
+                <li class="catalog-filter__radiobutton-item">
+                  <input class="catalog-filter__radiobutton-custom" type="radio" name="radiobutton-milk-availability" value="without-milk" id="without-milk">
+                  <label class="catalog-filter__radiobutton-field" for="without-milk">
+                    Без молока
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__title">Страна произрастания</legend>
+              <ul class="catalog-filter__checkbox-list">
+                <li class="catalog-filter__checkbox-item">
+                  <input class="catalog-filter__checkbox-custom" type="checkbox"  name="checkbox-origin-country-brazil" value="country-brazil" id="country-brazil" checked>
+                  <label class="catalog-filter__checkbox-field" for="country-brazil">
+                    Бразилия
+                  </label>
+                </li>
+
+                <li class="catalog-filter__checkbox-item">
+                  <input class="catalog-filter__checkbox-custom" type="checkbox"  name="checkbox-origin-country-ethiopia" value="country-ethiopia" id="country-ethiopia">
+                  <label class="catalog-filter__checkbox-field" for="country-ethiopia">
+                    Эфиопия
+                  </label>
+                </li>
+
+                <li class="catalog-filter__checkbox-item">
+                  <input class="catalog-filter__checkbox-custom" type="checkbox"  name="checkbox-origin-country-colombia" value="country-colombia" id="country-colombia">
+                  <label class="catalog-filter__checkbox-field" for="country-colombia">
+                    Колумбия
+                  </label>
+                </li>
+
+                <li class="catalog-filter__checkbox-item">
+                  <input class="catalog-filter__checkbox-custom" type="checkbox"  name="checkbox-origin-country-costa-rica" value="country-costa-rica" id="country-costa-rica">
+                  <label class="catalog-filter__checkbox-field" for="country-costa-rica">
+                    Коста-Рика
+                  </label>
+                </li>
+
+                <li class="catalog-filter__checkbox-item">
+                  <input class="catalog-filter__checkbox-custom" type="checkbox"  name="checkbox-origin-country-peru" value="country-peru" id="country-peru">
+                  <label class="catalog-filter__checkbox-field" for="country-peru">
+                    Перу
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <div class="catalog-filter__group">
+              <button class="catalog-filter__button" type="submit">Применить фильтр</button>
+              <button class="catalog-filter__button catalog-filter__button--second" type="reset">Сбросить фильтр</button>
+            </div>
+          </form>
+        </section>
+
+
+        <div class="catalog-sorting">
+          <fieldset class=""></fieldset>
+        </div>
+
+        <section>
+
+        </section>
+
+
+
+      </div>
     </section>
 
 
