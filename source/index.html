@@ -80,9 +80,9 @@
     <section class="promo-slider">
       <h2 class="promo-slider__heading heading-sub">Промо-товары</h2>
 
-      <ul class="promo-slider-list">
-        <li class="promo-slider-list__item">
-          <article class="promo-product__wrapper">
+      <ul class="promo-slider__list">
+        <li class="promo-slider__item">
+          <article class="promo-product-article">
             <a class="promo-product__link" href="#">
               <picture>
                 <!-- <source> -->
@@ -177,6 +177,7 @@
         <span class="catalog__text">Каталог кофейных напитков</span>
 
         <section class="catalog-filter">
+          <h3 class="visually-hidden">Фильтр каталога</h3>
           <form class="catalog-filter__form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter__group">
               <legend class="catalog-filter__title">Цена</legend>
@@ -271,20 +272,182 @@
 
 
         <div class="catalog-sorting">
-          <fieldset class=""></fieldset>
+          <fieldset class="catalog-sorting__group">
+            <legend class="catalog-sorting__title">Сортировка:</legend>
+            <select class="catalog-sorting__select-control" name="catalog-sorting__select-control">
+              <option value="sorting-by-default">по умолчанию</option>
+              <option value="sorting-by-popular">по популярности</option>
+              <option value="sorting-by-availability">по наличию</option>
+            </select>
+          </fieldset>
         </div>
 
-        <section>
+        <section class="catalog-goods">
+          <div class="catalog-goods__wrapper">
+            <ul class="catalog-goods__list">
+              <li class="catalog-goods__item">
+                <article class="catalog-goods-article">
+                  <a class="catalog-goods__link" href="#">
+                    <picture>
+                      <!-- source -->
+                      <img class="catalog-goods__image" width="" height="" src="" srcset="" alt="">
+                    </picture>
+                  </a>
+                  <a class="catalog-goods__link" href="#">
+                    <h3 class="catalog-goods__heading heading-tertiary">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <span class="catalog-goods__price">225₽</span>
+                  <a class="catalog-goods__add-to-cart" href="#">
+                    <svg>
 
+                    </svg>
+                    В корзину
+                  </a>
+                </article>
+
+                <article class="catalog-goods-article">
+                  <a class="catalog-goods__link" href="#">
+                    <picture>
+                      <!-- source -->
+                      <img class="catalog-goods__image" width="" height="" src="" srcset="" alt="">
+                    </picture>
+                  </a>
+                  <a class="catalog-goods__link" href="#">
+                    <h3 class="catalog-goods__heading heading-tertiary">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <span class="catalog-goods__price">225₽</span>
+                  <a class="catalog-goods__add-to-cart" href="#">
+                    <svg>
+
+                    </svg>
+                    В корзину
+                  </a>
+                </article>
+
+                <article class="catalog-goods-article">
+                  <a class="catalog-goods__link" href="#">
+                    <picture>
+                      <!-- source -->
+                      <img class="catalog-goods__image" width="" height="" src="" srcset="" alt="">
+                    </picture>
+                  </a>
+                  <a class="catalog-goods__link" href="#">
+                    <h3 class="catalog-goods__heading heading-tertiary">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <span class="catalog-goods__price">225₽</span>
+                  <a class="catalog-goods__add-to-cart" href="#">
+                    <svg>
+
+                    </svg>
+                    В корзину
+                  </a>
+                </article>
+
+                <article class="catalog-goods-article">
+                  <a class="catalog-goods__link" href="#">
+                    <picture>
+                      <!-- source -->
+                      <img class="catalog-goods__image" width="" height="" src="" srcset="" alt="">
+                    </picture>
+                  </a>
+                  <a class="catalog-goods__link" href="#">
+                    <h3 class="catalog-goods__heading heading-tertiary">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <span class="catalog-goods__price">225₽</span>
+                  <a class="catalog-goods__add-to-cart" href="#">
+                    <svg>
+
+                    </svg>
+                    В корзину
+                  </a>
+                </article>
+
+                <article class="catalog-goods-article">
+                  <a class="catalog-goods__link" href="#">
+                    <picture>
+                      <!-- source -->
+                      <img class="catalog-goods__image" width="" height="" src="" srcset="" alt="">
+                    </picture>
+                  </a>
+                  <a class="catalog-goods__link" href="#">
+                    <h3 class="catalog-goods__heading heading-tertiary">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <span class="catalog-goods__price">225₽</span>
+                  <a class="catalog-goods__add-to-cart" href="#">
+                    <svg>
+
+                    </svg>
+                    В корзину
+                  </a>
+                </article>
+
+                <article class="catalog-goods-article">
+                  <a class="catalog-goods__link" href="#">
+                    <picture>
+                      <!-- source -->
+                      <img class="catalog-goods__image" width="" height="" src="" srcset="" alt="">
+                    </picture>
+                  </a>
+                  <a class="catalog-goods__link" href="#">
+                    <h3 class="catalog-goods__heading heading-tertiary">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <span class="catalog-goods__price">225₽</span>
+                  <a class="catalog-goods__add-to-cart" href="#">
+                    <svg>
+
+                    </svg>
+                    В корзину
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <div class="catalog-pagination">
+            <ul class="catalog-pagination__list">
+              <li class="catalog-pagination__item">
+                <a class="catalog-pagination__link" href="#">
+                  <svg>
+
+                  </svg>
+                  <span class="visually-hidden">Назад</span>
+                </a>
+              </li>
+
+              <li class="catalog-pagination__item">
+                <a class="catalog-pagination__link" href="#">1</a>
+              </li>
+
+              <li class="catalog-pagination__item">
+                <a class="catalog-pagination__link current-link" href="#">2</a>
+              </li>
+
+              <li class="catalog-pagination__item">
+                <a class="catalog-pagination__link" href="#">3</a>
+              </li>
+
+              <li class="catalog-pagination__item">
+                <a class="catalog-pagination__link" href="#">
+                  <svg>
+
+                  </svg>
+                  <span class="visually-hidden">Вперед</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
 
 
 
       </div>
     </section>
-
-
-
   </main>
 
 
