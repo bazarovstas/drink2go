@@ -26,55 +26,159 @@
         </a>
       </div>
 
-      <span class="main-header__shop-description">Интернет-магазин кофейных напитков</span>
+      <h1 class="main-header__heading heading">Интернет-магазин кофейных напитков</h1>
 
-      <nav class="navigation-wrapper">
-        <!-- with js: main-navigation--closed;  without js: main-navigation--opened, main-navigation--nojs -->
-        <div class="main-navigation main-navigation--closed">
-          <ul class="main-navigation-list">
-            <li class="main-navigation-list__item">
-              <a class="main-navigation-list__link" href="#">Главная</a>
+      <nav class="nav-wrapper">
+        <!-- with js: main-nav--closed;  without js: main-nav--opened, main-nav--nojs -->
+        <div class="main-nav main-nav--closed">
+          <ul class="main-nav-list">
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link" href="#">Главная</a>
             </li>
-            <li class="main-navigation-list__item">
-              <a class="main-navigation-list__link" href="#">Каталог</a>
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link" href="#">Каталог</a>
             </li>
-            <li class="main-navigation-list__item">
-              <a class="main-navigation-list__link" href="#">Доставка</a>
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link" href="#">Доставка</a>
             </li>
-            <li class="main-navigation-list__item">
-              <a class="main-navigation-list__link" href="#">О нас</a>
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link" href="#">О нас</a>
             </li>
           </ul>
         </div>
 
-        <div class="main-navigation-user">
-          <ul class="main-navigation-user-list">
-            <li class="main-navigation-user-list__item">
-              <a class="main-navigation-user-list__link" href="#">Войти</a>
+        <div class="main-nav-user">
+          <ul class="main-nav-user-list">
+            <li class="main-nav-user-list__item">
+              <a class="main-nav-user-list__link" href="#">
+                <svg class="main-nav-user-list__icon">
+
+                </svg>
+                <span class="main-nav-user-list__link-name">Войти</span>
+              </a>
             </li>
-            <li class="main-navigation-user-list__item">
-              <a class="main-navigation-user-list__link" href="#">Корзина</a>
+            <li class="main-nav-user-list__item">
+              <a class="main-nav-user-list__link" href="#">
+                <svg class="main-nav-user-list__icon">
+
+                </svg>
+                <span class="main-nav-user-list__link-name">Корзина</span>
+              </a>
             </li>
           </ul>
         </div>
 
-        <button class="main-navigation__toogle" type="button">
+        <button class="main-nav__toogle main-nav__toogle--mobile" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
     </div>
-
-
-
   </header>
 
+
   <main class="main-container">
+    <section class="promo-slider">
+      <h2 class="promo-slider__heading heading-sub">Промо-товары</h2>
+
+      <ul class="promo-slider-list">
+        <li class="promo-slider-list__item">
+          <article class="promo-product__wrapper">
+            <a class="promo-product__link" href="#">
+              <picture>
+                <!-- <source> -->
+                <img class="promo-product__image" width="" height="" src="" srcset="" alt="">
+              </picture>
+            </a>
+
+            <span class="promo-product__promo-text">Новинка!</span>
+            <a class="promo-product__link" href="#">
+              <h3 class="promo-product__heading heading-tertiary">Декаф Флэт Уайт</h3>
+            </a>
+            <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+            <span class="promo-product__old-price">295₽</span>
+            <span class="promo-product__price">225₽</span>
+
+            <a class="promo-product__add-to-cart button" href="#">Заказать</a>
+          </article>
+        </li>
+      </ul>
+
+      <div class="promo-slider-control">
+        <button class="promo-slider-control__button" type="button">
+          <svg class="promo-slider-control__button">
+
+          </svg>
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+
+        <button class="promo-slider-control__button" type="button">
+          <svg class="promo-slider-control__button">
+
+          </svg>
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+
+        <ol class="promo-slider-pagination">
+          <li class="promo-slider-pagination__item">
+            <button class="promo-slider-pagination__button current-slide" type="button">
+              <span class="visually-hidden">Cлайд</span>
+            </button>
+          </li>
+          <li class="promo-slider-pagination__item">
+            <button class="promo-slider-pagination__button" type="button">
+              <span class="visually-hidden">Cлайд</span>
+            </button>
+          </li>
+          <li class="promo-slider-pagination__item">
+            <button class="promo-slider-pagination__button" type="button">
+              <span class="visually-hidden">Cлайд</span>
+            </button>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__heading heading-sub">Преимущества</h2>
+
+        <span class="advantages__text">Главные причины выбрать Drink2Go</span>
+
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--speed">
+            <p class="advantages__item-title">Скорость</p>
+            <p class="advantages__item-description">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+          <li class="advantages__item advantages__item--convenience">
+            <p class="advantages__item-title">Удобство</p>
+            <p class="advantages__item-description">Легко помещается и в карман, и в маленькую сумочку</p>
+          </li>
+          <li class="advantages__item advantages__item--vigor">
+            <p class="advantages__item-title">Бодрость</p>
+            <p class="advantages__item-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </li>
+          <li class="advantages__item advantages__item--eco-friendly">
+            <p class="advantages__item-title">Экологичность</p>
+            <p class="advantages__item-description">Вся упаковка сделана из перерабатываемых материалов</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section>
+
+    </section>
+
+
 
   </main>
+
 
   <footer class="main-footer">
 
   </footer>
-
+  <!-- <script></script> -->
 </body>
 </html>
