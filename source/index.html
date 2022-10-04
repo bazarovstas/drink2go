@@ -31,38 +31,38 @@
       <nav class="nav-wrapper">
         <!-- with js: main-nav--closed;  without js: main-nav--opened, main-nav--nojs -->
         <div class="main-nav main-nav--closed">
-          <ul class="main-nav-list">
-            <li class="main-nav-list__item">
-              <a class="main-nav-list__link" href="#">Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
             </li>
-            <li class="main-nav-list__item">
-              <a class="main-nav-list__link" href="#">Каталог</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог</a>
             </li>
-            <li class="main-nav-list__item">
-              <a class="main-nav-list__link" href="#">Доставка</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка</a>
             </li>
-            <li class="main-nav-list__item">
-              <a class="main-nav-list__link" href="#">О нас</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О нас</a>
             </li>
           </ul>
         </div>
 
         <div class="main-nav-user">
-          <ul class="main-nav-user-list">
-            <li class="main-nav-user-list__item">
-              <a class="main-nav-user-list__link" href="#">
-                <svg class="main-nav-user-list__icon">
+          <ul class="main-nav-user__list">
+            <li class="main-nav-user__item">
+              <a class="main-nav-user__link" href="#">
+                <svg class="main-nav-user__icon">
 
                 </svg>
-                <span class="main-nav-user-list__link-name">Войти</span>
+                <span class="main-nav-user__link-name">Войти</span>
               </a>
             </li>
-            <li class="main-nav-user-list__item">
-              <a class="main-nav-user-list__link" href="#">
-                <svg class="main-nav-user-list__icon">
+            <li class="main-nav-user__item">
+              <a class="main-nav-user__link" href="#">
+                <svg class="main-nav-user__icon">
 
                 </svg>
-                <span class="main-nav-user-list__link-name">Корзина</span>
+                <span class="main-nav-user__link-name">Корзина</span>
               </a>
             </li>
           </ul>
@@ -82,7 +82,7 @@
 
       <ul class="promo-slider__list">
         <li class="promo-slider__item">
-          <article class="promo-product-article">
+          <article class="promo-product">
             <a class="promo-product__link" href="#">
               <picture>
                 <!-- <source> -->
@@ -270,7 +270,6 @@
           </form>
         </section>
 
-
         <div class="catalog-sorting">
           <fieldset class="catalog-sorting__group">
             <legend class="catalog-sorting__title">Сортировка:</legend>
@@ -444,16 +443,42 @@
           </div>
         </section>
 
-
-
+        <section class="map">
+          <h2 class="visually-hidden">Карта</h2>
+          <div>
+            <!-- leaflet -->
+          </div>
+        </section>
       </div>
     </section>
   </main>
 
 
   <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__logo-wrapper">
 
+      </div>
+
+      <div class="main-footer__social-wrapper social">
+
+      </div>
+
+      <section class="main-footer__shop shop">
+
+      </section>
+
+      <section class="main-footer__media media">
+
+      </section>
+
+      <section class="main-footer__contacts contacts">
+
+      </section>
+    </div>
   </footer>
+
+
   <!-- <script></script> -->
 </body>
 </html>
