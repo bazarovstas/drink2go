@@ -1,5 +1,7 @@
-// Начните писать стили здесь
+// global
+@use "global/global-styles.scss";
+@use "global/variables.scss";
+@use "global/fonts.scss";
 
-body {
-  background-color: rgb(250, 244, 235);
-}
+
+//
