@@ -3,13 +3,19 @@
 @use "global/variables.scss";
 @use "global/fonts.scss";
 
-
-//
+// header
 @use "blocks/main-nav.scss";
 @use "blocks/main-nav-user.scss";
 @use "blocks/main-header.scss";
+
+// main
 @use "blocks/promo-slider.scss";
 @use "blocks/promo-product.scss";
+@use "blocks/promo-slider-control.scss";
+@use "blocks/promo-slider-pagination.scss";
+@use "blocks/advantages.scss";
+
+// footer
 
 
 // other

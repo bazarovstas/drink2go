@@ -1,0 +1,52 @@
+@import "global/variables.scss";
+
+.advantages {
+  padding: 50px 20px 60px 20px;
+
+  background-color: $color-base-white;
+}
+
+.advantages__heading {
+  margin: 0 0 4px 0;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-base-primary;
+  letter-spacing: 0.04em;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages__promo-text {
+  margin: 0 0 4px 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: $color-base-black;
+
+  text-align: center;
+}
+
+.advantages__list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.advantages__item-title {
+  margin: 0;
+  padding: 98px 0 4px 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color-base-black;
+
+  text-align: center;
+}
+
+.advantages__item-description {
+  margin: 0;
+}
