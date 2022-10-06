@@ -1,0 +1,23 @@
+@import "global/variables.scss";
+
+
+.promo-slider__list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.promo-slider__item {
+  padding: 20px 20px 60px 20px;
+}
+
+.promo-slider__item-1 {
+  background-color: $color-bg-flat-white;
+}
+
+.promo-slider__item-2 {
+  background-color: $color-bg-lavender-latte;
+}
+
+.promo-slider__item-3 {
+  background-color: $color-bg-espresso;
+}

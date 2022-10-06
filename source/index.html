@@ -87,107 +87,109 @@
 
   <main class="main-container">
     <section class="promo-slider">
-      <h2 class="promo-slider__heading heading-sub visually-hidden">Промо-товары</h2>
+      <div class="promo-slider__wrapper">
+        <h2 class="promo-slider__heading heading-sub visually-hidden">Промо-товары</h2>
 
-      <ul class="promo-slider__list">
-        <li class="promo-slider__item promo-slider__item-1">
-          <article class="promo-product">
-            <a class="promo-product__link" href="#">
-              <picture>
-                <!-- <source> -->
-                <img class="promo-product__image" width="280" height="280" src="./images/contents/product-image-flat-white-mobile.png" srcset="" alt="Бежевая банка кофе 'Декаф Флэт Уайт' с молоком.">
-              </picture>
-            </a>
+        <ul class="promo-slider__list">
+          <li class="promo-slider__item promo-slider__item-1">
+            <article class="promo-product">
+              <a class="promo-product__link" href="#">
+                <picture>
+                  <!-- <source> -->
+                  <img class="promo-product__image" width="280" height="280" src="./images/contents/product-image-flat-white-mobile.png" srcset="" alt="Бежевая банка кофе 'Декаф Флэт Уайт' с молоком.">
+                </picture>
+              </a>
 
-            <span class="promo-product__badge">Новинка!</span>
-            <a class="promo-product__link" href="#">
-              <h3 class="promo-product__heading heading-tertiary">Декаф Флэт Уайт</h3>
-            </a>
-            <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <span class="promo-product__old-price">295₽</span>
-            <span class="promo-product__price">225₽</span>
+              <span class="promo-product__badge">Новинка!</span>
+              <a class="promo-product__link" href="#">
+                <h3 class="promo-product__heading heading-tertiary">Декаф Флэт Уайт</h3>
+              </a>
+              <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+              <span class="promo-product__old-price">295₽</span>
+              <span class="promo-product__price">225₽</span>
 
-            <a class="promo-product__add-to-cart button" href="#">Заказать</a>
-          </article>
-        </li>
-
-        <li class="promo-slider__item promo-slider__item-2">
-          <article class="promo-product">
-            <a class="promo-product__link" href="#">
-              <picture>
-                <!-- <source> -->
-                <img class="promo-product__image" width="280" height="280" src="./images/contents/product-image-lavender-mobile.png" srcset="" alt="<Сиреневая банка кофе 'Лавандовый Латте' с лавандовым сиропом.">
-              </picture>
-            </a>
-
-            <span class="promo-product__badge">Новинка!</span>
-            <a class="promo-product__link" href="#">
-              <h3 class="promo-product__heading heading-tertiary">Лавандовый Латте</h3>
-            </a>
-            <p class="promo-product__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-            <span class="promo-product__old-price">285₽</span>
-            <span class="promo-product__price">265₽</span>
-
-            <a class="promo-product__add-to-cart button" href="#">Заказать</a>
-          </article>
-        </li>
-
-        <li class="promo-slider__item promo-slider__item-3">
-          <article class="promo-product">
-            <a class="promo-product__link" href="#">
-              <picture>
-                <!-- <source> -->
-                <img class="promo-product__image" width="280" height="280" src="./images/contents/product-image-espresso-mobile.png" srcset="" alt="Черная банка колумбийского кофе 'Тройной Эспрессо'.">
-              </picture>
-            </a>
-
-            <span class="promo-product__badge">Новинка!</span>
-            <a class="promo-product__link" href="#">
-              <h3 class="promo-product__heading heading-tertiary">Тройной Эспрессо</h3>
-            </a>
-            <p class="promo-product__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-            <span class="promo-product__old-price">395₽</span>
-            <span class="promo-product__price">375₽</span>
-
-            <a class="promo-product__add-to-cart button" href="#">Заказать</a>
-          </article>
-        </li>
-      </ul>
-
-      <div class="promo-slider-control">
-        <button class="promo-slider-control__button" type="button">
-          <svg class="promo-slider-control__icon-right" width="11" height="20" viewBox="0 0 11 20" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF"/>
-          </svg>
-          <span class="visually-hidden">Предыдущий слайд</span>
-        </button>
-
-        <button class="promo-slider-control__button" type="button">
-          <svg class="promo-slider-control__icon-left" width="11" height="20" viewBox="0 0 11 20" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF"/>
-          </svg>
-          <span class="visually-hidden">Следующий слайд</span>
-        </button>
-      </div>
-
-      <div class="promo-slider-pagination">
-        <ul class="promo-slider-pagination__list">
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button current-slide" type="button">
-              <span class="visually-hidden">Cлайд</span>
-            </button>
+              <a class="promo-product__add-to-cart button" href="#">Заказать</a>
+            </article>
           </li>
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button" type="button">
-              <span class="visually-hidden">Cлайд</span>
-            </button>
+
+          <li class="promo-slider__item promo-slider__item-2">
+            <article class="promo-product">
+              <a class="promo-product__link" href="#">
+                <picture>
+                  <!-- <source> -->
+                  <img class="promo-product__image" width="280" height="280" src="./images/contents/product-image-lavender-mobile.png" srcset="" alt="<Сиреневая банка кофе 'Лавандовый Латте' с лавандовым сиропом.">
+                </picture>
+              </a>
+
+              <span class="promo-product__badge">Новинка!</span>
+              <a class="promo-product__link" href="#">
+                <h3 class="promo-product__heading heading-tertiary">Лавандовый Латте</h3>
+              </a>
+              <p class="promo-product__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              <span class="promo-product__old-price">285₽</span>
+              <span class="promo-product__price">265₽</span>
+
+              <a class="promo-product__add-to-cart button" href="#">Заказать</a>
+            </article>
           </li>
-          <li class="promo-slider-pagination__item">
-            <button class="promo-slider-pagination__button" type="button">
-              <span class="visually-hidden">Cлайд</span>
-            </button>
+
+          <li class="promo-slider__item promo-slider__item-3">
+            <article class="promo-product">
+              <a class="promo-product__link" href="#">
+                <picture>
+                  <!-- <source> -->
+                  <img class="promo-product__image" width="280" height="280" src="./images/contents/product-image-espresso-mobile.png" srcset="" alt="Черная банка колумбийского кофе 'Тройной Эспрессо'.">
+                </picture>
+              </a>
+
+              <span class="promo-product__badge">Новинка!</span>
+              <a class="promo-product__link" href="#">
+                <h3 class="promo-product__heading heading-tertiary">Тройной Эспрессо</h3>
+              </a>
+              <p class="promo-product__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+              <span class="promo-product__old-price">395₽</span>
+              <span class="promo-product__price">375₽</span>
+
+              <a class="promo-product__add-to-cart button" href="#">Заказать</a>
+            </article>
           </li>
         </ul>
+
+        <div class="promo-slider-control">
+          <button class="promo-slider-control__button" type="button">
+            <svg class="promo-slider-control__icon-right" width="11" height="20" viewBox="0 0 11 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF"/>
+            </svg>
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+
+          <button class="promo-slider-control__button" type="button">
+            <svg class="promo-slider-control__icon-left" width="11" height="20" viewBox="0 0 11 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF"/>
+            </svg>
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
+        </div>
+
+        <div class="promo-slider-pagination">
+          <ul class="promo-slider-pagination__list">
+            <li class="promo-slider-pagination__item">
+              <button class="promo-slider-pagination__button current-slide" type="button">
+                <span class="visually-hidden">Cлайд</span>
+              </button>
+            </li>
+            <li class="promo-slider-pagination__item">
+              <button class="promo-slider-pagination__button" type="button">
+                <span class="visually-hidden">Cлайд</span>
+              </button>
+            </li>
+            <li class="promo-slider-pagination__item">
+              <button class="promo-slider-pagination__button" type="button">
+                <span class="visually-hidden">Cлайд</span>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
