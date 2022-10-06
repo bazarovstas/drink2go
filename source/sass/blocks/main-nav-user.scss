@@ -1,0 +1,10 @@
+@import "global/variables.scss";
+
+.main-nav-user__link-name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-base-black;
+
+  text-transform: uppercase;
+}

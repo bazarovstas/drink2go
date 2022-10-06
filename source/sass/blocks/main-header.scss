@@ -1,0 +1,13 @@
+@import "global/variables.scss";
+
+.main-header {
+  background-color: $color-base-white;
+}
+
+.main-header__heading {
+  display: none;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}

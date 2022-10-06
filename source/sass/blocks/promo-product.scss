@@ -1,0 +1,19 @@
+@import "global/variables.scss";
+
+.promo-product__badge {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-base-primary;
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+.promo-product__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: $color-base-black;
+  letter-spacing: 0.02em;
+}
