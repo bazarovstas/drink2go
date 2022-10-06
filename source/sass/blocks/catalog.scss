@@ -1,0 +1,31 @@
+@import "global/variables.scss";
+
+.catalog {
+  padding: 50px 20px 44px 20px;
+
+  background-color: $color-bg-lightest-grey;
+}
+
+.catalog__heading {
+  margin: 0 0 4px 0;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-base-primary;
+  letter-spacing: 0.04em;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog__text {
+  margin: 0 0 21px 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: $color-base-black;
+
+  text-align: center;
+}
