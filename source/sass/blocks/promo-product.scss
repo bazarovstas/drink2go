@@ -1,5 +1,15 @@
 @import "global/variables.scss";
 
+.promo-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-product__link-image {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
 .promo-product__badge {
   margin: 0 0 4px 0;
 
@@ -29,4 +39,44 @@
   margin: 0 0 20px 0;
 
   text-align: center;
+}
+
+.promo-product__layout-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-product__old-price {
+  margin-right: 6px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $color-base-primary;
+
+  text-decoration: line-through;
+}
+
+.promo-product__price {
+  margin-right: 20px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: $color-base-black;
+}
+
+.promo-product__add-to-cart {
+  display: flex;
+  justify-content: center;
+  padding: 8px 20px 8px 20px;
+  width: 113px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-base-white;
+
+  background-color: $color-base-primary;
+  border-radius: 4px;
 }
