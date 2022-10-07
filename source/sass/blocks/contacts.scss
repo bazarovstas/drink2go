@@ -18,7 +18,6 @@
 
 .contacts__address {
   display: flex;
-  justify-content: space-around;
   column-gap: 6px;
 }
 
@@ -43,4 +42,20 @@
 .contacts__telephone-link {
   font-style: normal;
   color: $color-base-black;
+}
+
+.contacts__telephone {
+  display: flex;
+  column-gap: 6px;
+}
+
+.contacts__telephone::before {
+  content: "";
+  flex-shrink: 0;
+  margin-top: 1px;
+  width: 13px;
+  height: 16px;
+
+  background-image: url("../images/svg-css/icon-phone.svg");
+  background-repeat: no-repeat;
 }

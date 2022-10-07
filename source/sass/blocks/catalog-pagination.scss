@@ -34,6 +34,7 @@
   color: $color-base-primary;
 
   &--current {
+    font-weight: 600;
     color: $color-base-black;
 
     background-color: $color-bg-lightest-grey;
