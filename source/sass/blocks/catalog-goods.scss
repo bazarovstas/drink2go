@@ -1,1 +1,57 @@
 @import "global/variables.scss";
+
+.catalog-goods {
+  margin: 20px 0 20px 0;
+}
+
+.catalog-goods__list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.catalog-goods__heading {
+  margin: 0 0 4px 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color-base-black;
+}
+
+.catalog-goods__item {
+  margin: 0 0 20px 0;
+  padding: 40px 20px 20px 20px;
+
+  background-color: $color-base-white;
+  border-radius: 4px;
+}
+
+.catalog-goods__text {
+  margin: 0 0 16px 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-base-black;
+}
+
+.catalog-goods__price {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: $color-base-black;
+}
+
+.catalog-goods__add-to-cart {
+  padding: 8px 20px 8px 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-base-white;
+
+  background-color: $color-base-primary;
+  border-radius: 4px;
+}
