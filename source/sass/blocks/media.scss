@@ -1,0 +1,35 @@
+@import "global/variables.scss";
+
+.media__heading {
+  margin: 0;
+  padding-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-base-primary;
+  letter-spacing: 0.02em;
+}
+
+.media__list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.media__item {
+  padding-bottom: 20px;
+}
+
+.media__item:last-child {
+  padding-bottom: 8px;
+}
+
+.media__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-base-black;
+  letter-spacing: 0.02em;
+
+  text-transform: uppercase;
+}

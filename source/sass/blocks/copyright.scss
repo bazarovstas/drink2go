@@ -1,0 +1,18 @@
+@import "global/variables.scss";
+
+.main-footer__copyright-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 30px 0;
+}
+
+.copyright__text {
+  margin-right: 4px;
+
+  color: $color-base-grey;
+}
+
+.copyright__link {
+  margin-top: 6px;
+}
