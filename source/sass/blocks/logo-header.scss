@@ -1,13 +1,13 @@
 @import "global/variables.scss";
 
-.logo-footer__image {
+.logo-header__image {
   &--mobile {
     @media (min-width: $width-tablet) {
       display: none;
     }
   }
 
-  &--tablet-and-desktop {
+  &--tablet {
     display: none;
 
     @media (min-width: $width-tablet) {
@@ -15,19 +15,15 @@
     }
 
     @media (min-width: $width-desktop) {
-      display: block;
+      display: none;
     }
   }
-}
 
-.logo-footer__text {
-  display: none;
-
-  @media (min-width: $width-tablet) {
+  &--desktop {
     display: none;
-  }
 
-  @media (min-width: $width-desktop) {
-    display: block;
+    @media (min-width: $width-desktop) {
+      display: block;
+    }
   }
 }

@@ -4,9 +4,10 @@
 @use "global/fonts.scss";
 
 // header
+@use "blocks/main-header.scss";
+@use "blocks/logo-header.scss";
 @use "blocks/main-nav.scss";
 @use "blocks/main-nav-user.scss";
-@use "blocks/main-header.scss";
 
 // main
 @use "blocks/promo-slider.scss";

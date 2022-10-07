@@ -1,5 +1,13 @@
 @import "global/variables.scss";
 
+.main-nav {
+  display: flex;
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
 .main-nav__link {
   font-weight: 500;
   font-size: 12px;
@@ -10,5 +18,21 @@
 
   &--current {
     color: $color-base-primary;
+  }
+}
+
+.main-nav__toogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--open {
+    display: none;
   }
 }
