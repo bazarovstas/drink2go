@@ -35,6 +35,30 @@
   padding-left: 0;
 }
 
+.advantages__item {
+  background-repeat: no-repeat;
+
+  &--speed {
+    background-image: url("../images/svg-css/icon-clock.svg");
+    background-position: 50% 28%;
+  }
+
+  &--convenience {
+    background-image: url("../images/svg-css/icon-pocket.svg");
+    background-position: 50% 28%;
+  }
+
+  &--vigor {
+    background-image: url("../images/svg-css/icon-lighting.svg");
+    background-position: 50% 27%;
+  }
+
+  &--eco-friendly {
+    background-image: url("../images/svg-css/icon-leaf.svg");
+    background-position: 50% 27%;
+  }
+}
+
 .advantages__item-title {
   margin: 0;
   padding: 98px 0 4px 0;
@@ -49,4 +73,6 @@
 
 .advantages__item-description {
   margin: 0;
+
+  text-align: center;
 }

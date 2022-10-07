@@ -1,7 +1,8 @@
 @import "global/variables.scss";
 
 .promo-slider-pagination__list {
-  display: flex;
+  // display: flex;
+  display: none;
   justify-content: center;
 
   margin: 0;
