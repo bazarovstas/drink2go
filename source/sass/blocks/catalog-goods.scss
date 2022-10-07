@@ -26,6 +26,16 @@
   border-radius: 4px;
 }
 
+.catalog-goods-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-goods__link-image {
+  display: block;
+  margin: 0 auto 24px auto;
+}
+
 .catalog-goods__text {
   margin: 0 0 16px 0;
 
@@ -33,6 +43,12 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-base-black;
+}
+
+.catalog-goods__layout-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .catalog-goods__price {
@@ -45,6 +61,8 @@
 }
 
 .catalog-goods__add-to-cart {
+  display: flex;
+  align-items: center;
   padding: 8px 20px 8px 20px;
 
   font-weight: 400;
@@ -54,4 +72,8 @@
 
   background-color: $color-base-primary;
   border-radius: 4px;
+}
+
+.catalog-goods__icon {
+  margin-right: 6px;
 }
