@@ -10,12 +10,22 @@
   position: absolute;
   top: 50%;
   left: 4px;
+
+  @media (min-width: $width-tablet) {
+    top: 37%;
+    left: 34px;
+  }
 }
 
 .promo-slider-control__right {
   position: absolute;
   top: 50%;
   right: 4px;
+
+  @media (min-width: $width-tablet) {
+    top: 37%;
+    right: 34px;
+  }
 }
 
 .promo-slider-control__icon-left {

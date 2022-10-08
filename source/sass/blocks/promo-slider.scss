@@ -11,22 +11,38 @@
 
 .promo-slider__item {
   padding: 20px 20px 60px 20px;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 80px 0 80px;
+  }
 }
 
 .promo-slider__item-1 {
   display: block;
 
   background-color: $color-bg-flat-white;
+
+  @media (min-width: $width-tablet) {
+    background: linear-gradient(to bottom, $color-bg-flat-white 77%, $color-base-white 77%);
+  }
 }
 
 .promo-slider__item-2 {
   display: none;
 
   background-color: $color-bg-lavender-latte;
+
+  @media (min-width: $width-tablet) {
+    background: linear-gradient(to bottom, $color-bg-lavender-latte 77%, $color-base-white 77%);
+  }
 }
 
 .promo-slider__item-3 {
   display: none;
 
   background-color: $color-bg-espresso;
+
+  @media (min-width: $width-tablet) {
+    background: linear-gradient(to bottom, $color-bg-espresso 77%, $color-base-white 77%);
+  }
 }
