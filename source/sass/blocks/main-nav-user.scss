@@ -1,8 +1,8 @@
 @import "global/variables.scss";
 
-// .main-nav-user {
-
-// }
+.main-nav-user {
+  display: flex;
+}
 
 .main-nav-user__list {
   display: flex;
@@ -31,4 +31,20 @@
   color: $color-base-black;
 
   text-transform: uppercase;
+}
+
+.main-nav-user__toogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--open {
+    display: none;
+  }
 }
