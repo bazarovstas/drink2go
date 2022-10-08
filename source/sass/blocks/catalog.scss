@@ -4,6 +4,10 @@
   padding: 50px 20px 44px 20px;
 
   background-color: $color-bg-lightest-grey;
+
+  @media (min-width: $width-tablet) {
+    padding: 50px 20px 90px 20px;
+  }
 }
 
 .catalog__heading {
@@ -28,4 +32,9 @@
   color: $color-base-black;
 
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
