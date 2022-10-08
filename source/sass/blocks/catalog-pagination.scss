@@ -15,6 +15,22 @@
 
   background-color: $color-base-white;
   border-radius: 4px;
+
+  @media (min-width: $width-tablet) {
+    &:first-child {
+      width: 140px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-left: 0;
+      width: 140px;
+      margin-right: -20px;
+    }
+  }
 }
 
 .catalog-pagination__item:first-child {
@@ -41,6 +57,26 @@
   }
 }
 
-.catalog-pagination__icon-left {
-  rotate: 180deg;
+.catalog-pagination__icon {
+  &--left {
+    @media (min-width: $width-tablet) {
+      display: none;
+    }
+  }
+
+  &--right {
+    rotate: 180deg;
+
+    @media (min-width: $width-tablet) {
+      display: none;
+    }
+  }
+}
+
+.catalog-pagination__text {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+  }
 }
