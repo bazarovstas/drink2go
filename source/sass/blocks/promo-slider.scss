@@ -15,6 +15,11 @@
   @media (min-width: $width-tablet) {
     padding: 60px 80px 0 80px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding: 30px 80px 84px 105px;
+    min-height: 714px;
+  }
 }
 
 .promo-slider__item-1 {
@@ -24,6 +29,14 @@
 
   @media (min-width: $width-tablet) {
     background: linear-gradient(to bottom, $color-bg-flat-white 77%, $color-base-white 77%);
+  }
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    align-items: center;
+
+    background: none;
+    background-color: $color-bg-flat-white;
   }
 }
 
@@ -35,6 +48,11 @@
   @media (min-width: $width-tablet) {
     background: linear-gradient(to bottom, $color-bg-lavender-latte 77%, $color-base-white 77%);
   }
+
+  @media (min-width: $width-desktop) {
+    background: none;
+    background-color: $color-bg-lavender-latte;
+  }
 }
 
 .promo-slider__item-3 {
@@ -44,5 +62,10 @@
 
   @media (min-width: $width-tablet) {
     background: linear-gradient(to bottom, $color-bg-espresso 77%, $color-base-white 77%);
+  }
+
+  @media (min-width: $width-desktop) {
+    background: none;
+    background-color: $color-bg-espresso;
   }
 }

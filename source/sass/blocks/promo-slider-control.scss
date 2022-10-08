@@ -15,6 +15,11 @@
     top: 37%;
     left: 34px;
   }
+
+  @media (min-width: $width-desktop) {
+    top: 50%;
+    left: 34px;
+  }
 }
 
 .promo-slider-control__right {
@@ -24,6 +29,11 @@
 
   @media (min-width: $width-tablet) {
     top: 37%;
+    right: 34px;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 50%;
     right: 34px;
   }
 }
