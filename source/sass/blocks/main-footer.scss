@@ -1,17 +1,62 @@
 @import "global/variables.scss";
 
+.main-footer__top-wrapper {
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
 .main-footer__logo-and-social-wrapper {
   border-bottom: 1px solid $color-base-secondary;
+
+  @media (min-width: $width-tablet) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+    border-bottom: none;
+  }
 }
 
 .main-footer__layout-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 20px 20px 20px 20px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+}
+
+.main-footer__shop {
+  @media (min-width: $width-tablet) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.main-footer__media {
+  @media (min-width: $width-tablet) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.main-footer__contacts {
+  @media (min-width: $width-tablet) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
 }
 
 .main-footer__wrapper {
   padding: 20px 20px 20px 20px;
 
   border-bottom: 1px solid $color-base-secondary;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: none;
+  }
 }

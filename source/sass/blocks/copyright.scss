@@ -1,10 +1,20 @@
 @import "global/variables.scss";
 
-.main-footer__copyright-wrapper {
+.copyright {
+  line-height: 16px;
+}
+
+.copyright__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0 30px 0;
+
+  line-height: 16px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 40px;
+  }
 }
 
 .copyright__text {
