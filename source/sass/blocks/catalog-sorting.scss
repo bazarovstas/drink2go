@@ -7,6 +7,11 @@
   @media (min-width: $width-tablet) {
     justify-content: right;
   }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
 }
 
 .catalog-sorting__group {

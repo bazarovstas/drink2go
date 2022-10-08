@@ -3,12 +3,24 @@
 .catalog-filter {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $width-desktop) {
+    margin-right: 30px;
+
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+  }
 }
 
 .catalog-filter__form {
   @media (min-width: $width-tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -17,6 +29,35 @@
   padding: 0;
 
   border: none;
+
+  @media (min-width: $width-tablet) {
+    &--price {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    &--milk {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    &--country {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+
+    &--buttons {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin-left: -50px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    &--buttons {
+      margin-left: 0;
+    }
+  }
 }
 
 .catalog-filter__title {

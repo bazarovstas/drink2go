@@ -1,5 +1,11 @@
 @import "global/variables.scss";
 
+.catalog-pagination {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+
+}
+
 .catalog-pagination__list {
   display: flex;
   justify-content: flex-end;
