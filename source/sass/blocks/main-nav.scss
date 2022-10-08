@@ -1,5 +1,10 @@
 @import "global/variables.scss";
 
+.main-nav__wrapper {
+  background-color: $color-base-white;
+  z-index: 10;
+}
+
 .main-nav--open .main-nav__wrapper {
   position: absolute;
   width: 100%;
@@ -31,11 +36,6 @@
 
 .main-nav--nojs .main-nav-user__toogle {
   display: none;
-}
-
-.main-nav__wrapper {
-  background-color: $color-base-white;
-  z-index: 10;
 }
 
 .main-nav__list {
