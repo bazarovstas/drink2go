@@ -17,6 +17,15 @@
   @media (min-width: $width-tablet) {
     height: 80px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-right: 20px;
+    width: auto;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .main-nav-user__link {
@@ -25,6 +34,10 @@
   align-items: center;
   width: 100%;
   height: 100%;
+
+  @media (min-width: $width-desktop) {
+    padding: 0 20px;
+  }
 }
 
 .main-nav-user__link-name {
@@ -33,8 +46,14 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-base-black;
+  letter-spacing: 0.02em;
 
   text-transform: uppercase;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+    margin-left: 8px;
+  }
 }
 
 .main-nav-user__toogle {

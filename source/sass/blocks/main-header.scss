@@ -8,16 +8,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
 
   @media (min-width: $width-tablet) {
     padding: 0 20px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 40px;
+  }
+}
+
+.main-header__layout-wrapper {
+  @media (min-width: $width-desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .main-header__logo-wrapper {
-  margin-left: 20px;
   width: 32px;
   height: 36px;
+
+  @media (min-width: $width-tablet) {
+    width: 82px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-right: 20px;
+    width: 170px;
+  }
 }
 
 .main-header__logo {
@@ -32,4 +52,10 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+    margin: 0;
+    max-width: 130px;
+  }
 }

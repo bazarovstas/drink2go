@@ -67,6 +67,14 @@
     min-width: auto;
     height: 80px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .main-nav__item:last-child {
