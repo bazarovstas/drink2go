@@ -1,5 +1,14 @@
 @import "global/variables.scss";
 
+.catalog-sorting {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $width-tablet) {
+    justify-content: right;
+  }
+}
+
 .catalog-sorting__group {
   border: none;
 }

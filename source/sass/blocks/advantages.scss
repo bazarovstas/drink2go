@@ -4,6 +4,10 @@
   padding: 50px 20px 60px 20px;
 
   background-color: $color-base-white;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 30px 100px 30px;
+  }
 }
 
 .advantages__heading {
@@ -28,11 +32,25 @@
   color: $color-base-black;
 
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 0 60px 0;
+
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
 
 .advantages__list {
   margin: 0;
   padding-left: 0;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+  }
 }
 
 .advantages__item {
@@ -41,21 +59,41 @@
   &--speed {
     background-image: url("../images/svg-css/icon-clock.svg");
     background-position: 50% 28%;
+
+    @media (min-width: $width-tablet) {
+      background-position: 0% 10%;
+    }
   }
 
   &--convenience {
     background-image: url("../images/svg-css/icon-pocket.svg");
     background-position: 50% 28%;
+
+    @media (min-width: $width-tablet) {
+      background-position: 0% 5%;
+    }
   }
 
   &--vigor {
     background-image: url("../images/svg-css/icon-lighting.svg");
     background-position: 50% 27%;
+
+    @media (min-width: $width-tablet) {
+      background-position: 0% 5%;
+    }
   }
 
   &--eco-friendly {
     background-image: url("../images/svg-css/icon-leaf.svg");
     background-position: 50% 27%;
+
+    @media (min-width: $width-tablet) {
+      background-position: 0% 5%;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-left: 72px;
   }
 }
 
@@ -69,10 +107,26 @@
   color: $color-base-black;
 
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 0 10px 0;
+
+    font-size: 24px;
+    line-height: 36px;
+
+    text-align: left;
+  }
 }
 
 .advantages__item-description {
   margin: 0;
 
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: left;
+  }
 }

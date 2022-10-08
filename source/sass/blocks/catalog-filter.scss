@@ -1,5 +1,17 @@
 @import "global/variables.scss";
 
+.catalog-filter {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter__form {
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .catalog-filter__group {
   margin: 0;
   padding: 0;

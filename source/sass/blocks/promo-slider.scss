@@ -14,13 +14,19 @@
 }
 
 .promo-slider__item-1 {
+  display: block;
+
   background-color: $color-bg-flat-white;
 }
 
 .promo-slider__item-2 {
+  display: none;
+
   background-color: $color-bg-lavender-latte;
 }
 
 .promo-slider__item-3 {
+  display: none;
+
   background-color: $color-bg-espresso;
 }

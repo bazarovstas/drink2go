@@ -241,7 +241,7 @@
         <section class="catalog-filter">
           <h3 class="visually-hidden">Фильтр каталога</h3>
           <form class="catalog-filter__form  form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter__group">
+            <fieldset class="catalog-filter__group  catalog-filter__group--price">
               <legend class="catalog-filter__title">Цена</legend>
               <div class="catalog-filter__range">
                 <div class="catalog-filter__range-scale">
@@ -252,7 +252,7 @@
               <input class="catalog-filter__range-max" type="text">
             </fieldset>
 
-            <fieldset class="catalog-filter__group">
+            <fieldset class="catalog-filter__group  catalog-filter__group--milk">
               <legend class="catalog-filter__title">Наличие молока</legend>
               <ul class="catalog-filter__radiobutton-list">
                 <li class="catalog-filter__radiobutton-item">
@@ -285,7 +285,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-filter__group">
+            <fieldset class="catalog-filter__group  catalog-filter__group--country">
               <legend class="catalog-filter__title">Страна произрастания</legend>
               <ul class="catalog-filter__checkbox-list">
                 <li class="catalog-filter__checkbox-item">
@@ -334,8 +334,8 @@
 
         <div class="catalog-sorting">
           <fieldset class="catalog-sorting__group">
-            <legend class="catalog-sorting__title">Сортировка:</legend>
-            <select class="catalog-sorting__select-control" name="catalog-sorting__select-control">
+            <label class="catalog-sorting__title" for="catalog-sorting__select-id">Сортировка:</label>
+            <select class="catalog-sorting__select-control" name="catalog-sorting__select-control" id="catalog-sorting__select-id">
               <option value="sorting-by-default">по умолчанию</option>
               <option value="sorting-by-popular">по популярности</option>
               <option value="sorting-by-availability">по наличию</option>
