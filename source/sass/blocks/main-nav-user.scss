@@ -13,6 +13,10 @@
 .main-nav-user__item {
   width: 60px;
   height: 60px;
+
+  @media (min-width: $width-tablet) {
+    height: 80px;
+  }
 }
 
 .main-nav-user__link {
@@ -45,6 +49,10 @@
   cursor: pointer;
 
   &--open {
+    display: none;
+  }
+
+  @media (min-width: $width-tablet) {
     display: none;
   }
 }

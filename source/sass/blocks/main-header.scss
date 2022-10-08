@@ -8,6 +8,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 20px;
+  }
 }
 
 .main-header__logo-wrapper {
