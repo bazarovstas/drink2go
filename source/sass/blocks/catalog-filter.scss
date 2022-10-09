@@ -16,6 +16,7 @@
   @media (min-width: $width-tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
   }
 
   @media (min-width: $width-desktop) {
@@ -55,9 +56,10 @@
     }
 
     &--buttons {
+      display: inline-flex;
       grid-column: 2 / 3;
       grid-row: 2 / 3;
-      margin-left: -50px;
+      margin: 0 0 44px -85px;
     }
   }
 
@@ -75,6 +77,59 @@
   font-size: 16px;
   line-height: 24px;
   color: $color-base-black;
+}
+
+.catalog-filter__button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  padding: 10px 15px 10px 15px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-base-white;
+  background-color: $color-base-primary;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:first-child {
+    margin-bottom: 24px;
+  }
+
+  &:last-child {
+    margin-bottom: 37px;
+  }
+
+  &--second {
+    padding: 10px 17px 10px 17px;
+
+    font-size: 14px;
+    color: $color-base-primary;
+
+    background-color: $color-base-white;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+    padding: 8px 3px 8px 3px;
+
+    &:first-child {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--second {
+      padding: 8px 5px 8px 5px;
+    }
+  }
 }
 
 // range
@@ -153,6 +208,10 @@
 
   &::placeholder {
     color: $color-base-grey;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 92px;
   }
 }
 
@@ -280,38 +339,4 @@
 
 .catalog-filter__checkbox-custom:checked:disabled + .catalog-filter__checkbox-field::before {
   background-image: url("../images/svg-css/checkbox-disabled-checked.svg");
-}
-
-.catalog-filter__button {
-  display: flex;
-  align-items: center;
-  margin: 0 auto 0 auto;
-  padding: 10px 15px 10px 15px;
-
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-  color: $color-base-white;
-  background-color: $color-base-primary;
-  border: none;
-  border-radius: 4px;
-
-  &:first-child {
-    margin-bottom: 24px;
-  }
-
-  &:last-child {
-    margin-bottom: 37px;
-  }
-
-  &--second {
-    padding: 10px 17px 10px 17px;
-
-    font-size: 14px;
-    color: $color-base-primary;
-
-    background-color: $color-base-white;
-  }
 }
