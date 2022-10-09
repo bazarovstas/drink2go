@@ -64,6 +64,14 @@
   }
 
   @media (min-width: $width-desktop) {
+    &--milk {
+      margin-bottom: 8px;
+    }
+
+    &--country {
+      margin-bottom: 24px;
+    }
+
     &--buttons {
       margin-left: 0;
     }
@@ -212,6 +220,10 @@
 
   @media (min-width: $width-tablet) {
     width: 92px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 135px;
   }
 }
 
