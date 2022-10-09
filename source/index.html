@@ -111,7 +111,7 @@
               <a class="promo-product__link-text" href="#">
                 <h3 class="promo-product__heading  heading-tertiary">Декаф Флэт Уайт</h3>
               </a>
-              <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+              <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
               <div class="promo-product__layout-wrapper">
                 <span class="promo-product__old-price">295₽</span>
                 <span class="promo-product__price">225₽</span>
@@ -225,7 +225,7 @@
 
           <li class="advantages__item  advantages__item--convenience">
             <p class="advantages__item-title">Удобство</p>
-            <p class="advantages__item-description">Легко помещается и в карман, и в маленькую сумочку</p>
+            <p class="advantages__item-description">Легко помещается и в карман, и&nbsp;в&nbsp;маленькую сумочку</p>
           </li>
 
           <li class="advantages__item  advantages__item--vigor">
@@ -235,7 +235,7 @@
 
           <li class="advantages__item  advantages__item--eco-friendly">
             <p class="advantages__item-title">Экологичность</p>
-            <p class="advantages__item-description">Вся упаковка сделана из перерабатываемых материалов</p>
+            <p class="advantages__item-description">Вся упаковка сделана из&nbsp;перерабатываемых материалов</p>
           </li>
         </ul>
       </div>
@@ -252,18 +252,33 @@
           <h3 class="visually-hidden">Фильтр каталога</h3>
           <form class="catalog-filter__form  form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter__group  catalog-filter__group--price">
-              <legend class="catalog-filter__title">Цена</legend>
+              <legend class="catalog-filter__title  catalog-filter__title--price">Цена</legend>
               <div class="catalog-filter__range">
                 <div class="catalog-filter__range-scale">
-                  <!-- noUiSlider -->
+                  <div class="catalog-filter__range-bar">
+                    <button class="catalog-filter__range-toggle  catalog-filter__range-toggle--min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="catalog-filter__range-toggle  catalog-filter__range-toggle--max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
                 </div>
               </div>
-              <input class="catalog-filter__range-min" type="text">
-              <input class="catalog-filter__range-max" type="text">
+              <div class="catalog-filter__range-inputs">
+                <p class="catalog-filter__range-input-wrapper">
+                  <label class="visually-hidden" for="catalog-filter__range-min">Минимальная цена.</label>
+                  <input class="catalog-filter__range-min" type="text" placeholder="0" id="catalog-filter__range-min">
+                </p>
+                <p class="catalog-filter__range-input-wrapper">
+                  <label class="visually-hidden" for="catalog-filter__range-max">Максимальная цена.</label>
+                  <input class="catalog-filter__range-max" type="text" value="900" placeholder="0" id="catalog-filter__range-max">
+                </p>
+              </div>
             </fieldset>
 
             <fieldset class="catalog-filter__group  catalog-filter__group--milk">
-              <legend class="catalog-filter__title">Наличие молока</legend>
+              <legend class="catalog-filter__title  catalog-filter__title--milk">Наличие молока</legend>
               <ul class="catalog-filter__radiobutton-list">
                 <li class="catalog-filter__radiobutton-item">
                   <input class="catalog-filter__radiobutton-custom" type="radio" name="radiobutton-milk-availability" value="no-matter-milk" id="no-matter-milk" checked>
@@ -287,8 +302,8 @@
                 </li>
 
                 <li class="catalog-filter__radiobutton-item">
-                  <input class="catalog-filter__radiobutton-custom" type="radio" name="radiobutton-milk-availability" value="without-milk" id="without-milk">
-                  <label class="catalog-filter__radiobutton-field" for="without-milk">
+                  <input class="catalog-filter__radiobutton-custom" type="radio" name="radiobutton-milk-availability" value="without-milk" id="without-milk" disabled>
+                  <label class="catalog-filter__radiobutton-field  catalog-filter__radiobutton-field--disabled" for="without-milk">
                     Без молока
                   </label>
                 </li>
@@ -296,7 +311,7 @@
             </fieldset>
 
             <fieldset class="catalog-filter__group  catalog-filter__group--country">
-              <legend class="catalog-filter__title">Страна произрастания</legend>
+              <legend class="catalog-filter__title  catalog-filter__title--country">Страна произрастания</legend>
               <ul class="catalog-filter__checkbox-list">
                 <li class="catalog-filter__checkbox-item">
                   <input class="catalog-filter__checkbox-custom" type="checkbox" name="checkbox-origin-country-brazil" value="country-brazil" id="country-brazil" checked>
@@ -327,8 +342,8 @@
                 </li>
 
                 <li class="catalog-filter__checkbox-item">
-                  <input class="catalog-filter__checkbox-custom" type="checkbox" name="checkbox-origin-country-peru" value="country-peru" id="country-peru">
-                  <label class="catalog-filter__checkbox-field" for="country-peru">
+                  <input class="catalog-filter__checkbox-custom" type="checkbox" name="checkbox-origin-country-peru" value="country-peru" id="country-peru" disabled>
+                  <label class="catalog-filter__checkbox-field  catalog-filter__checkbox-field--disabled" for="country-peru">
                     Перу
                   </label>
                 </li>
@@ -368,7 +383,7 @@
                   <a class="catalog-goods__link-text" href="#">
                     <h4 class="catalog-goods__heading  heading-tertiary">Декаф Флэт Уайт</h4>
                   </a>
-                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="catalog-goods__layout-wrapper">
                     <span class="catalog-goods__price">225₽</span>
                     <a class="catalog-goods__add-to-cart" href="#">
@@ -392,7 +407,7 @@
                   <a class="catalog-goods__link-text" href="#">
                     <h4 class="catalog-goods__heading  heading-tertiary">Декаф Флэт Уайт</h4>
                   </a>
-                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="catalog-goods__layout-wrapper">
                     <span class="catalog-goods__price">225₽</span>
                     <a class="catalog-goods__add-to-cart" href="#">
@@ -416,7 +431,7 @@
                   <a class="catalog-goods__link-text" href="#">
                     <h4 class="catalog-goods__heading heading-tertiary">Декаф Флэт Уайт</h4>
                   </a>
-                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="catalog-goods__layout-wrapper">
                     <span class="catalog-goods__price">225₽</span>
                     <a class="catalog-goods__add-to-cart" href="#">
@@ -440,7 +455,7 @@
                   <a class="catalog-goods__link-text" href="#">
                     <h4 class="catalog-goods__heading  heading-tertiary">Декаф Флэт Уайт</h4>
                   </a>
-                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="catalog-goods__layout-wrapper">
                     <span class="catalog-goods__price">225₽</span>
                     <a class="catalog-goods__add-to-cart" href="#">
@@ -464,7 +479,7 @@
                   <a class="catalog-goods__link-text" href="#">
                     <h4 class="catalog-goods__heading  heading-tertiary">Декаф Флэт Уайт</h4>
                   </a>
-                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="catalog-goods__layout-wrapper">
                     <span class="catalog-goods__price">225₽</span>
                     <a class="catalog-goods__add-to-cart" href="#">
@@ -488,7 +503,7 @@
                   <a class="catalog-goods__link-text" href="#">
                     <h4 class="catalog-goods__heading  heading-tertiary">Декаф Флэт Уайт</h4>
                   </a>
-                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <p class="catalog-goods__text">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
                   <div class="catalog-goods__layout-wrapper">
                     <span class="catalog-goods__price">225₽</span>
                     <a class="catalog-goods__add-to-cart" href="#">

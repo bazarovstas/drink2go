@@ -30,6 +30,14 @@
 
   border: none;
 
+  &--price {
+    margin-bottom: 24px;
+  }
+
+  &--country {
+    margin-bottom: 14px;
+  }
+
   @media (min-width: $width-tablet) {
     &--price {
       grid-column: 1 / 2;
@@ -61,8 +69,249 @@
 }
 
 .catalog-filter__title {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: $color-base-black;
+}
+
+// range
+.catalog-filter__range {
+  position: relative;
+  margin-bottom: 31px;
+}
+
+.catalog-filter__range-scale {
+  position: relative;
+  margin: 10px 0 10px 0;
+  height: 2px;
+
+  background-color: $color-alt-light-grey;
+}
+
+.catalog-filter__range-bar::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 90%;
+  height: 4px;
+
+  background-color: $color-alt-primary-lighter;
+}
+
+.catalog-filter__range-toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  background-color: $color-base-white;
+  outline: 2px solid $color-alt-primary-lighter;
+  outline-offset: -2px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+
+  &--min {
+    top: -12px;
+    left: 0;
+  }
+
+  &--max {
+    top: -12px;
+    right: 7%;
+  }
+}
+
+.catalog-filter__range-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter__range-input-wrapper {
+  margin: 0;
+}
+
+.catalog-filter__range-min,
+.catalog-filter__range-max {
+  padding: 5px 10px 5px 10px;
+  width: 118px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-base-black;
+
+  text-align: center;
+  border: 2px solid $color-alt-primary-lighter;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: $color-base-grey;
+  }
+}
+
+.catalog-filter__radiobutton-list,
+.catalog-filter__checkbox-list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.catalog-filter__radiobutton-item {
+  margin-bottom: 21px;
+}
+
+.catalog-filter__checkbox-item {
+  margin-bottom: 20px;
+}
+
+.catalog-filter__radiobutton-custom,
+.catalog-filter__checkbox-custom {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.catalog-filter__radiobutton-field,
+.catalog-filter__checkbox-field {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  &--disabled {
+    color: $color-base-grey;
+  }
+}
+
+// radiobutton
+.catalog-filter__radiobutton-custom + .catalog-filter__radiobutton-field::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+
+  background-image: url("../images/svg-css/radiobutton-default-unchecked.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.catalog-filter__radiobutton-custom:checked + .catalog-filter__radiobutton-field::before {
+  background-image: url("../images/svg-css/radiobutton-default-checked.svg");
+}
+
+.catalog-filter__radiobutton-custom:not(:disabled) + .catalog-filter__radiobutton-field:active::before {
+  background-image: url("../images/svg-css/radiobutton-default-checked.svg");
+}
+
+.catalog-filter__radiobutton-custom:not(:checked):not(:disabled) + .catalog-filter__radiobutton-field:hover::before {
+  background-image: url("../images/svg-css/radiobutton-hover-focus.svg");
+}
+
+.catalog-filter__radiobutton-custom:focus + .catalog-filter__radiobutton-field::before {
+  outline: 2px solid $color-alt-primary-lighter;
+  outline-offset: -2px;
+}
+
+.catalog-filter__radiobutton-custom:focus-visible + .catalog-filter__radiobutton-field::before {
+  outline: 3px solid $color-alt-primary-lighter;
+  outline-offset: -2px;
+}
+
+.catalog-filter__radiobutton-custom:disabled + .catalog-filter__radiobutton-field::before {
+  background-image: url("../images/svg-css/radiobutton-disabled-unchecked.svg");
+}
+
+.catalog-filter__radiobutton-custom:checked:disabled + .catalog-filter__radiobutton-field::before {
+  background-image: url("../images/svg-css/radiobutton-disabled-checked.svg");
+}
+
+// checkbox
+.catalog-filter__checkbox-custom + .catalog-filter__checkbox-field::before {
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+  margin-right: 10px;
+
+  background-image: url("../images/svg-css/checkbox-default-unchecked.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+  transition: 0.15s;
+}
+
+.catalog-filter__checkbox-custom:checked + .catalog-filter__checkbox-field::before {
+  background-image: url("../images/svg-css/checkbox-default-checked.svg");
+}
+
+.catalog-filter__checkbox-custom:not(:disabled) + .catalog-filter__checkbox-field:active::before {
+  background-image: url("../images/svg-css/checkbox-default-checked.svg");
+}
+
+.catalog-filter__checkbox-custom:not(:checked):not(:disabled) + .catalog-filter__checkbox-field:hover::before {
+  background-image: url("../images/svg-css/checkbox-hover-focus.svg");
+}
+
+.catalog-filter__checkbox-custom:focus + .catalog-filter__checkbox-field::before {
+  outline: 2px solid $color-alt-primary-lighter;
+  outline-offset: -2px;
+  border-radius: 12px;
+}
+
+.catalog-filter__checkbox-custom:focus-visible + .catalog-filter__checkbox-field::before {
+  outline: 3px solid $color-alt-primary-lighter;
+  outline-offset: -2px;
+}
+
+.catalog-filter__checkbox-custom:disabled + .catalog-filter__checkbox-field::before {
+  background-image: url("../images/svg-css/checkbox-disabled-unchecked.svg");
+}
+
+.catalog-filter__checkbox-custom:checked:disabled + .catalog-filter__checkbox-field::before {
+  background-image: url("../images/svg-css/checkbox-disabled-checked.svg");
+}
+
+.catalog-filter__button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  padding: 10px 15px 10px 15px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-base-white;
+  background-color: $color-base-primary;
+  border: none;
+  border-radius: 4px;
+
+  &:first-child {
+    margin-bottom: 24px;
+  }
+
+  &:last-child {
+    margin-bottom: 37px;
+  }
+
+  &--second {
+    padding: 10px 17px 10px 17px;
+
+    font-size: 14px;
+    color: $color-base-primary;
+
+    background-color: $color-base-white;
+  }
 }
