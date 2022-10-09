@@ -53,6 +53,19 @@
   }
 }
 
+.main-footer__logo-text {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
 .main-footer__shop {
   @media (min-width: $width-tablet) {
     grid-column: 1 / 2;

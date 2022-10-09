@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drink2Go</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 
 <body class="page__body">
-  <!-- with js: main-nav--closed;
-    without js: main-nav--open, main-nav--nojs -->
   <header class="main-header  main-nav  main-nav--open  main-nav--nojs">
     <div class="main-header__wrapper">
       <div class="main-header__layout-wrapper">
@@ -74,11 +76,11 @@
           </ul>
         </div>
 
-        <button class="main-nav-user__toogle  main-nav-user__toogle--mobile" type="button">
-          <svg class="main-nav-user__toogle--closed" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <button class="main-nav-user__toogle" type="button">
+          <svg class="main-nav-user__toogle-closed" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2H16V3.5H0V2ZM0 7.25H16V8.75H0V7.25ZM16 12.5H0V14H16V12.5Z" fill="#333333"/>
           </svg>
-          <svg class="main-nav-user__toogle--open" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <svg class="main-nav-user__toogle-open" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.02548 8L2 2.97452L2.97452 2L8 7.02548L13.0255 2L14 2.97452L8.97452 8L14 13.0255L13.0255 14L8 8.97452L2.97452 14L2 13.0255L7.02548 8Z" fill="#333333"/>
           </svg>
           <span class="visually-hidden">Открыть меню</span>
@@ -573,7 +575,7 @@
       <div class="main-footer__logo-and-social-wrapper">
         <div class="main-footer__layout-wrapper">
           <div class="main-footer__logo-wrapper">
-            <a class="logo-footer  logo-footer__link">
+            <a class="logo-footer">
               <svg class="logo-footer__image  logo-footer__image--mobile" width="82" height="36" viewBox="0 0 82 36" fill="none">
                 <path d="M76.936 17.24H81.136V24.2C80.176 24.888 79.072 25.416 77.824 25.784C76.576 26.152 75.328 26.336 74.08 26.336C72.32 26.336 70.736 25.968 69.328 25.232C67.92 24.48 66.816 23.44 66.016 22.112C65.216 20.784 64.816 19.28 64.816 17.6C64.816 15.92 65.216 14.416 66.016 13.088C66.816 11.76 67.928 10.728 69.352 9.992C70.776 9.24 72.384 8.864 74.176 8.864C75.744 8.864 77.152 9.128 78.4 9.656C79.648 10.184 80.688 10.944 81.52 11.936L78.496 14.672C77.36 13.424 76 12.8 74.416 12.8C72.976 12.8 71.816 13.24 70.936 14.12C70.056 14.984 69.616 16.144 69.616 17.6C69.616 18.528 69.816 19.36 70.216 20.096C70.616 20.816 71.176 21.384 71.896 21.8C72.616 22.2 73.44 22.4 74.368 22.4C75.28 22.4 76.136 22.216 76.936 21.848V17.24Z" fill="#333333"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M58 18C58 20.8737 57.4014 23.5901 56.3369 26H43C45.4627 22.2281 48 17.6606 48 13C48 7.00236 43.9385 1.95335 38.4158 0.453392C39.5681 0.156712 40.7678 0 42 0C50.8366 0 58 8.05888 58 18ZM44 13C44 8.02944 39.9706 4 35 4C28.3493 4 26 12.5071 26 18C26 27.9411 33.1634 36 42 36C46.7387 36 50.9962 33.6825 53.9259 30H35C35.3518 29.5514 35.7202 29.0891 36.0987 28.6142C39.6157 24.2012 44 18.6997 44 13Z" fill="#7859CF"/>
@@ -586,7 +588,7 @@
               </svg>
             </a>
 
-            <span class="logo-footer__text">Интернет-магазин кофейных напитков</span>
+            <span class="main-footer__logo-text">Интернет-магазин кофейных напитков</span>
           </div>
 
           <div class="main-footer__social-wrapper  social">
@@ -679,18 +681,18 @@
 
     <div class="main-footer__copyright  copyright">
       <div class="copyright__wrapper">
-        <span class="copyright__text">Разработано в HTML Academy</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__icon" width="12" height="16" viewBox="0 0 12 16" fill="none">
-            <path d="M11.2151 5.75392L5.97184 2.49957V2.49875L5.97121 2.49916L5.97058 2.49875V2.49957L0.784854 5.75013V1.40658L6.00008 0.830884L11.2151 1.40658V5.75392ZM11.211 6.32987L9.12557 7.62344L5.98451 5.65607L5.97935 6.22863L8.66414 7.9096L8.20107 8.19683L5.98451 6.80853L5.97935 7.3811L7.72892 8.47648L7.31607 8.76717L7.30606 8.77351L5.98451 7.95383L5.97935 8.52631L6.8465 9.06404L5.96315 9.62244L0.796198 6.3886L5.97058 3.1139V3.11448L11.211 6.32987ZM11.2151 11.7713L6 15.0384L0.784854 11.7713V7.02542L5.97763 10.2796L5.98631 10.8693L2.42396 8.63702L2.41871 9.20959L5.99523 11.4728L6.00407 12.0782L2.42873 9.83883L2.42356 10.4113L6 12.6745L9.60624 10.4026V7.95712L11.2151 6.94552V11.7713ZM5.99984 -3.17891e-07L0 0.662267V12.2411L6 16L12 12.2411V0.662267L5.99984 -3.17891e-07Z" fill="#BDBDBD"/>
-          </svg>
-          <span class="visually-hidden">HTML Academy</span>
+        <span class="copyright__text">Разработано в HTML Academy</span>
+        <svg class="copyright__icon" width="12" height="16" viewBox="0 0 12 16" fill="none">
+          <path d="M11.2151 5.75392L5.97184 2.49957V2.49875L5.97121 2.49916L5.97058 2.49875V2.49957L0.784854 5.75013V1.40658L6.00008 0.830884L11.2151 1.40658V5.75392ZM11.211 6.32987L9.12557 7.62344L5.98451 5.65607L5.97935 6.22863L8.66414 7.9096L8.20107 8.19683L5.98451 6.80853L5.97935 7.3811L7.72892 8.47648L7.31607 8.76717L7.30606 8.77351L5.98451 7.95383L5.97935 8.52631L6.8465 9.06404L5.96315 9.62244L0.796198 6.3886L5.97058 3.1139V3.11448L11.211 6.32987ZM11.2151 11.7713L6 15.0384L0.784854 11.7713V7.02542L5.97763 10.2796L5.98631 10.8693L2.42396 8.63702L2.41871 9.20959L5.99523 11.4728L6.00407 12.0782L2.42873 9.83883L2.42356 10.4113L6 12.6745L9.60624 10.4026V7.95712L11.2151 6.94552V11.7713ZM5.99984 -3.17891e-07L0 0.662267V12.2411L6 16L12 12.2411V0.662267L5.99984 -3.17891e-07Z" fill="#BDBDBD"/>
+        </svg>
+        <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </div>
   </footer>
 
 
-  <script src="./js/main.js" type="module"></script>
+  <script src="js/main.min.js" type="module"></script>
 </body>
 </html>

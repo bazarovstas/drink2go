@@ -67,11 +67,11 @@
   border: none;
   cursor: pointer;
 
-  &--open {
-    display: none;
-  }
-
   @media (min-width: $width-tablet) {
     display: none;
   }
+}
+
+.main-nav-user__toogle-open {
+  display: none;
 }
