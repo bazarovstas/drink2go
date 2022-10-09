@@ -1,5 +1,12 @@
 @import "global/variables.scss";
 
+.logo-footer__link {
+  @media (min-width: $width-desktop) {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
 .logo-footer__image {
   &--mobile {
     @media (min-width: $width-tablet) {
@@ -29,5 +36,6 @@
 
   @media (min-width: $width-desktop) {
     display: block;
+    margin-bottom: 50px;
   }
 }
