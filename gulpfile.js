@@ -52,9 +52,9 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    // .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     // для тестирования сборки из папки source
-    // .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -64,7 +64,10 @@ const scripts = () => {
   return gulp.src('source/js/main.js')
   .pipe(terser())
   .pipe(rename('main.min.js'))
-  .pipe(gulp.dest('build/js'));
+  // .pipe(gulp.dest('build/js'))
+  // для тестирования сборки из папки source
+  .pipe(gulp.dest('source/js'))
+  ;
 }
 
 
@@ -74,7 +77,6 @@ const optimizeImages = () => {
   .pipe(squoosh())
   .pipe(gulp.dest('build/images'));
 }
-
 
 const copyImages = () => {
   return gulp.src('source/images/**/*.{jpg,png}')
@@ -94,9 +96,9 @@ const svg = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      // baseDir: 'build'
       // для тестирования сборки из папки source
-      // baseDir: 'source'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,

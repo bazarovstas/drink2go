@@ -112,6 +112,24 @@
     margin-bottom: 37px;
   }
 
+  &:hover {
+    background-color: $color-alt-primary-lighter;
+  }
+
+  &:active {
+    background-color: $color-alt-primary-darker;
+  }
+
+  &:focus {
+    outline: 3px solid $color-alt-primary-opacity;
+    outline-offset: -1px;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $color-alt-primary-opacity;
+    outline-offset: -1px;
+  }
+
   &--second {
     padding: 10px 17px 10px 17px;
 
@@ -119,6 +137,26 @@
     color: $color-base-primary;
 
     background-color: $color-base-white;
+
+    &:hover {
+      color: $color-base-white;
+
+      background-color: $color-alt-primary-lighter;
+    }
+
+    &:active {
+      background-color: $color-alt-primary-darker;
+    }
+
+    &:focus {
+      outline: 3px solid $color-alt-primary-opacity;
+      outline-offset: -1px;
+    }
+
+    &:focus-visible {
+      outline: 3px solid $color-alt-primary-opacity;
+      outline-offset: -1px;
+    }
   }
 
   @media (min-width: $width-tablet) {
