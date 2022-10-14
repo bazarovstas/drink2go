@@ -38,6 +38,24 @@
   background-color: $color-base-white;
   border: none;
   cursor: pointer;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: $color-alt-primary-opacity;
+  }
+
+  &:focus {
+    background-color: $color-alt-primary-opacity;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-base-primary;
+  }
+
 
   &--current {
     background-color: $color-base-primary;

@@ -54,6 +54,30 @@
   line-height: 24px;
   color: $color-base-primary;
 
+  background-color: $color-base-white;
+  transition: 0.25s;
+
+  &:hover {
+    color: $color-base-white;
+
+    background-color: $color-alt-primary-lighter;
+  }
+
+  &:focus {
+    color: $color-base-white;
+
+    background-color: $color-alt-primary-lighter;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $color-alt-primary-opacity;
+    outline-offset: -1px;
+  }
+
+  &:active {
+    background-color: $color-alt-primary-darker;
+  }
+
   &--current {
     font-weight: 600;
     color: $color-base-black;
@@ -63,6 +87,8 @@
 }
 
 .catalog-pagination__icon {
+  fill: $color-base-primary;
+
   &--left {
     @media (min-width: $width-tablet) {
       display: none;
@@ -76,6 +102,14 @@
       display: none;
     }
   }
+}
+
+.catalog-pagination__link:hover .catalog-pagination__icon {
+  fill: $color-base-white;
+}
+
+.catalog-pagination__link:focus .catalog-pagination__icon {
+  fill: $color-base-white;
 }
 
 .catalog-pagination__text {

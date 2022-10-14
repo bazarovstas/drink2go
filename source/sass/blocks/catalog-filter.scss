@@ -103,6 +103,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.25s;
 
   &:first-child {
     margin-bottom: 24px;
@@ -116,18 +117,17 @@
     background-color: $color-alt-primary-lighter;
   }
 
-  &:active {
-    background-color: $color-alt-primary-darker;
-  }
-
   &:focus {
-    outline: 3px solid $color-alt-primary-opacity;
-    outline-offset: -1px;
+    background-color: $color-alt-primary-lighter;
   }
 
   &:focus-visible {
     outline: 3px solid $color-alt-primary-opacity;
     outline-offset: -1px;
+  }
+
+  &:active {
+    background-color: $color-alt-primary-darker;
   }
 
   &--second {
@@ -144,18 +144,19 @@
       background-color: $color-alt-primary-lighter;
     }
 
-    &:active {
-      background-color: $color-alt-primary-darker;
-    }
-
     &:focus {
-      outline: 3px solid $color-alt-primary-opacity;
-      outline-offset: -1px;
+      color: $color-base-white;
+
+      background-color: $color-alt-primary-lighter;
     }
 
     &:focus-visible {
       outline: 3px solid $color-alt-primary-opacity;
       outline-offset: -1px;
+    }
+
+    &:active {
+      background-color: $color-alt-primary-darker;
     }
   }
 
