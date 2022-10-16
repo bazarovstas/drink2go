@@ -206,8 +206,12 @@
 
 .catalog-filter__range-toggle {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 24px;
   height: 24px;
+  padding: 0;
 
   background-color: $color-base-white;
   outline: 2px solid $color-alt-primary-lighter;
@@ -216,6 +220,28 @@
   border: none;
   cursor: pointer;
   z-index: 1;
+
+  &:hover,
+  &:focus {
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-color: $color-alt-primary-opacity;
+      border-radius: 50%;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-alt-primary-lighter;
+    outline-offset: -2px;
+  }
+
+  &:active {
+    &::after {
+      background-color: $color-alt-primary-darker;
+    }
+  }
 
   &--min {
     top: -12px;
@@ -253,8 +279,20 @@
   border: 2px solid $color-alt-primary-lighter;
   border-radius: 4px;
 
+  &:focus-visible {
+    outline: 2px solid $color-alt-primary-darker;
+    outline-offset: -2px;
+  }
+
   &::placeholder {
     color: $color-base-grey;
+  }
+
+  &:disabled {
+    color: $color-base-grey;
+
+    border: 2px solid $color-alt-light-grey;
+    border-radius: 4px;
   }
 
   @media (min-width: $width-tablet) {

@@ -21,15 +21,14 @@
 }
 
 .catalog-sorting__title {
-  margin-right: 15px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
 
 .catalog-sorting__select-control {
-  max-width: 150px;
+  max-width: 165px;
+  padding: 4px 8px;
 
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -40,4 +39,22 @@
 
   background-color: transparent;
   border: none;
+
+  &:hover {
+    background-color: $color-base-secondary;
+    border-radius: 4px;
+  }
+
+  &:focus {
+    background-color: $color-base-secondary;
+    border-radius: 4px;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
 }

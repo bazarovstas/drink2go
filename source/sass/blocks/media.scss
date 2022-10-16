@@ -33,3 +33,18 @@
 
   text-transform: uppercase;
 }
+
+.media__item:hover .media__link,
+.media__item:focus .media__link {
+  color: $color-alt-primary-lighter;
+}
+
+.media__link:focus-visible {
+  color: $color-alt-primary-lighter;
+
+  outline: none;
+}
+
+.media__item:active .media__link {
+  color: $color-alt-primary-darker;
+}

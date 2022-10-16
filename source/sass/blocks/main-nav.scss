@@ -96,6 +96,22 @@
 
   text-transform: uppercase;
 
+  &:hover {
+    color: $color-base-primary;
+  }
+
+  &:focus {
+    color: $color-base-primary;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-base-secondary;
+  }
+
   &--current {
     color: $color-base-primary;
 

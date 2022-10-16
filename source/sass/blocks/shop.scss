@@ -37,3 +37,18 @@
 
   text-transform: uppercase;
 }
+
+.shop__item:hover .shop__link,
+.shop__item:focus .shop__link {
+  color: $color-alt-primary-lighter;
+}
+
+.shop__link:focus-visible {
+  color: $color-alt-primary-lighter;
+
+  outline: none;
+}
+
+.shop__item:active .shop__link {
+  color: $color-alt-primary-darker;
+}

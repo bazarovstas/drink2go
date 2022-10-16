@@ -39,11 +39,6 @@
   font-style: normal;
 }
 
-.contacts__telephone-link {
-  font-style: normal;
-  color: $color-base-black;
-}
-
 .contacts__telephone {
   display: flex;
   column-gap: 6px;
@@ -58,4 +53,24 @@
 
   background-image: url("../images/svg-css/icon-phone.svg");
   background-repeat: no-repeat;
+}
+
+.contacts__telephone-link {
+  font-style: normal;
+  color: $color-base-black;
+
+  &:hover,
+  &:focus {
+    color: $color-alt-primary-lighter;
+  }
+
+  &:focus-visible {
+    color: $color-alt-primary-lighter;
+
+    outline: none;
+  }
+
+  &:active {
+    color: $color-alt-primary-darker;
+  }
 }

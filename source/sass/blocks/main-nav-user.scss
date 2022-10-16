@@ -40,6 +40,23 @@
   }
 }
 
+.main-nav-user__icon {
+  fill: $color-base-black;
+}
+
+.main-nav-user__link:hover .main-nav-user__icon,
+.main-nav-user__link:focus .main-nav-user__icon {
+  fill: $color-base-primary;
+}
+
+.main-nav-user__link:focus-visible {
+  outline: none;
+}
+
+.main-nav-user__link:active {
+  background-color: $color-base-secondary;
+}
+
 .main-nav-user__link-name {
   display: none;
   font-weight: 500;
@@ -54,6 +71,11 @@
     display: block;
     margin-left: 8px;
   }
+}
+
+.main-nav-user__link:hover .main-nav-user__link-name,
+.main-nav-user__link:focus .main-nav-user__link-name {
+  color: $color-base-primary;
 }
 
 .main-nav-user__toogle {
@@ -72,6 +94,30 @@
   }
 }
 
+.main-nav-user__toogle-closed,
 .main-nav-user__toogle-open {
+  fill: $color-base-black;
+}
+
+.main-nav-user__toogle:hover .main-nav-user__toogle-closed,
+.main-nav-user__toogle:hover .main-nav-user__toogle-open,
+.main-nav-user__toogle:focus .main-nav-user__toogle-closed,
+.main-nav-user__toogle:focus .main-nav-user__toogle-open {
+  fill: $color-base-primary;
+}
+
+.main-nav-user__toogle:focus-visible {
+  outline: none;
+}
+
+.main-nav-user__toogle:active {
+  background-color: $color-base-secondary;
+}
+
+.main-nav--open .main-nav-user__toogle-closed {
+  display: none;
+}
+
+.main-nav--closed .main-nav-user__toogle-open {
   display: none;
 }
