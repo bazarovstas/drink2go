@@ -62,8 +62,8 @@ export const styles = () => {
 // Scripts
 const scripts = () => {
   return gulp.src('source/js/main.js')
-  .pipe(terser())
-  .pipe(rename('main.min.js'))
+  // .pipe(terser())
+  // .pipe(rename('main.min.js'))
   // .pipe(gulp.dest('build/js'))
   // для тестирования сборки из папки source
   .pipe(gulp.dest('source/js'))
