@@ -1,0 +1,19 @@
+@import "global/variables.scss";
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page__header {
+  flex: 0 0 auto;
+}
+
+.page__main {
+  flex: 1 0 auto;
+}
+
+.page__footer {
+  flex: 0 0 auto;
+}

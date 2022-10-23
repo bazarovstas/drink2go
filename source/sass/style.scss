@@ -4,6 +4,7 @@
 @use "global/fonts.scss";
 
 // header
+@use "blocks/page.scss";
 @use "blocks/main-header.scss";
 @use "blocks/logo-header.scss";
 @use "blocks/main-nav.scss";

@@ -1,3 +1,14 @@
+new Swiper('.promo-slider__wrapper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+});
+
+// new Swiper ('.promo-slider__wrapper');
+
+
+
 function mobileMenuToogle () {
   let nav = document.querySelector('.main-header');
   let toggle = document.querySelector('.main-nav-user__toogle');
